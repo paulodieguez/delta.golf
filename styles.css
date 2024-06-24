@@ -26,11 +26,6 @@ section {
     align-items: end;
 }
 
-.grid-3fr-1fr {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
@@ -247,6 +242,20 @@ ul {
     color: white;
     text-align: justify;
     padding-inline: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px black;
+    margin-top: 1.5em;
+}
+
+@media (min-width: 550px) {
+    .grid-3fr-1fr {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .cards-aside {
+        margin-top: 0;
+    }
 }
 
 .about-me-img {

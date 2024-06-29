@@ -99,6 +99,7 @@ footer.non-index {
     box-shadow: 0px -1px 3px black;
     margin-top: 2em;
     padding-top: 5px;
+    transition: 1s ease-in-out;
 }
 
 footer.index section {
@@ -203,14 +204,11 @@ ul {
 
 #AlbumCarousel {
     margin: auto;
-    max-width: 45em;
+    width: calc(min(75vw, 45em));
     box-shadow: 2px 2px 6px 2px black;
 }
-@media (max-height: 545px) {
-    #AlbumCarousel {
-        max-width: 40vw;
-    }
-}
+/*
+ */
 
 #AlbumCarousel,
 #AlbumCarousel .carousel-inner {

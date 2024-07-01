@@ -18,16 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     //Set variables to be used by The Observer function and variables for style changes
-    let carousel = document.querySelector("#AlbumCarousel");
-    let header = document.querySelector("#headerId");
-    let footer = document.querySelector("#footerId");
+    const carousel = document.querySelector("#AlbumCarousel");
+    const header = document.querySelector("#headerId");
+    const footer = document.querySelector("#footerId");
     let viewportHeight;
     let viewportWidth = window.innerWidth;
     let viewportWidth_next;
     // let viewportHeight = -0.7 * document.documentElement.clientHeight;
     let rootMarginStr;
     let theObserver;
-
 
     getHeight();
     runObserver();
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (viewportWidth_next != viewportWidth) {
             viewportWidth = viewportWidth_next;
             console.log("Width has been changed, running function");
-            console.log("Current viewport is " + viewportWidth_next);
+            console.log("Current viewport width is " + viewportWidth_next);
             theObserver.unobserve(carousel);
             getHeight();
             runObserver();

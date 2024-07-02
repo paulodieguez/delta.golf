@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 });
 
-
-
-// Intersection Observer from hackermoon.com
+// Intersection Observer
 document.addEventListener("DOMContentLoaded", () => {
 
     //Set variables to be used by The Observer function and variables for style changes
@@ -83,3 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     });
 });
+
+
+

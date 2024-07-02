@@ -43,6 +43,7 @@ body.index {
     background: linear-gradient(to bottom, rgba(0,0,0,0.8) 6%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.3) 75%),
                 url("imgs/img.jpg") center / cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 @media (max-height: 380px) {
     body.index {
@@ -250,7 +251,7 @@ ul {
 @media (min-width: 550px) {
     .grid-3fr-1fr {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1fr;
         margin-inline: 1em;
         gap: 1em;
     }
@@ -264,4 +265,23 @@ ul {
     width: 8em;
     float: inline-start;
     padding-right: 1em;
+}
+
+#hiddenElement {
+    transition: 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    font-size: 1.8em;
+    position: absolute;
+    bottom: -200px;
+    right: 5em;
+    line-height: 1em;
+    background-color: rgb(80,103,202,0.75);
+    border-radius: 15px;
+    padding: 10px;
+    transform: translate(50%, 50%);
+}
+
+#hiddenElement:hover,
+#hiddenElement:focus {
+    color: rgb(255 208 109);
+    font-size: 1.95em;
 }

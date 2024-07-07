@@ -1,0 +1,57 @@
+HTML tags used:
+<meta>
+<link>
+<script>
+<title>
+<header>
+<main>
+<footer>
+<div>
+<nav>
+<a>
+<p>
+<h5>
+<h3>
+<h2>
+<br>
+<em>
+<section>
+<strong>
+<svg>
+<dl>
+<dt>
+<dd>
+<code>
+<ul>
+<li>
+<blockquote>
+<cite>
+<button>
+
+CSS selectors used:
+body
+footer
+footer a
+header
+header div
+main
+nav a
+section
+ul
+.h-100pc
+.mx-wd-50
+.flexcolumn
+.grid-3x1
+.cards-grid
+#AlbumCarousel
+#hiddenElement
+#message-cs50
+
+JavaScript code:
+- Used at index.html to display a "click here" message after a couple of seconds of loading, and when clicked, change its text and make it desappear afterwards;
+- Used at album.html for a Intersection Observer API, to change <header> and <footer> behaviours when #AlbumCarousel reaches a certain point of the webpage;
+- Used for Bootsrap Carousel;
+
+BootStrap usage:
+- Used for <footer> icons and "Click Here" hand icon;
+- Used for Carousel at album.html;

@@ -3,10 +3,6 @@
     height: 100%;
 }
 
-.h-100vh {
-    height: 100vh;
-}
-
 .mx-wd-50 {
     max-width: 50em;
 }
@@ -34,7 +30,6 @@ footer.non-index > div {
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
-    /* grid-template-rows: repeat(auto-fit, 200px); */
     gap: 20px;
     justify-content: center;
 }
@@ -60,7 +55,6 @@ header div {
     padding: 1em;
     margin: auto;
 }
-
 @media (max-width: 500px) {
     header div {
         flex-direction: column;
@@ -106,11 +100,6 @@ footer.non-index {
     transition: 1s ease-in-out;
 }
 
-footer.index section {
-    height: 100%;
-    /* Corrects positioning error for footer on iOS devices */
-}
-
 
 /* Hero Image propertis */
 .hero {
@@ -145,9 +134,7 @@ footer.index section {
 }
 
 
-
-
-/* General Styling */
+/* General typography and styling */
 header, footer,
 footer a {
     color: white;
@@ -210,12 +197,16 @@ ul {
     width: calc(min(75vw, 45em));
     box-shadow: 2px 2px 6px 2px black;
 }
-/*
- */
 
 #AlbumCarousel,
 #AlbumCarousel .carousel-inner {
     border-radius: 10px;
+}
+
+.about-me-img {
+    width: 8em;
+    float: inline-start;
+    padding-right: 1em;
 }
 
 /* Cards Styling */
@@ -255,18 +246,12 @@ ul {
         margin-inline: 1em;
         gap: 1em;
     }
-
     .cards-aside {
         margin-top: 0;
     }
 }
 
-.about-me-img {
-    width: 8em;
-    float: inline-start;
-    padding-right: 1em;
-}
-
+/* Hidden Element Styling */
 #hiddenElement {
     transition: 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     font-size: 1.8em;
